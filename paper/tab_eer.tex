@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Average accuracy and EER disparity on the benchmarks whose groups are the classes (mean $\pm$ standard deviation over five seeds). The upper rows are the results reported in \cite{park2026fsw}; the lower rows are our runs}\label{tab:eer}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Method & \multicolumn{2}{c}{MNIST} & \multicolumn{2}{c}{FMNIST} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Acc. & EER & Acc. & EER \\
+\midrule
+Joint & 0.989\tiny{$\pm$0.000} & 0.003\tiny{$\pm$0.000} & 0.921\tiny{$\pm$0.002} & 0.024\tiny{$\pm$0.002} \\
+Fine-tune & 0.455\tiny{$\pm$0.000} & 0.326\tiny{$\pm$0.000} & 0.451\tiny{$\pm$0.000} & 0.325\tiny{$\pm$0.000} \\
+\midrule
+iCaRL & 0.918\tiny{$\pm$0.005} & 0.048\tiny{$\pm$0.003} & 0.852\tiny{$\pm$0.002} & 0.047\tiny{$\pm$0.001} \\
+WA & 0.911\tiny{$\pm$0.007} & 0.052\tiny{$\pm$0.006} & 0.809\tiny{$\pm$0.005} & 0.088\tiny{$\pm$0.003} \\
+CLAD & 0.835\tiny{$\pm$0.016} & 0.099\tiny{$\pm$0.016} & 0.782\tiny{$\pm$0.018} & 0.118\tiny{$\pm$0.022} \\
+GSS & 0.889\tiny{$\pm$0.010} & 0.080\tiny{$\pm$0.009} & 0.732\tiny{$\pm$0.021} & 0.149\tiny{$\pm$0.019} \\
+OCS & 0.929\tiny{$\pm$0.002} & 0.040\tiny{$\pm$0.003} & 0.799\tiny{$\pm$0.008} & 0.109\tiny{$\pm$0.007} \\
+FaIRL & 0.558\tiny{$\pm$0.060} & 0.273\tiny{$\pm$0.018} & 0.531\tiny{$\pm$0.032} & 0.289\tiny{$\pm$0.019} \\
+FSW \cite{park2026fsw} & 0.925\tiny{$\pm$0.004} & 0.032\tiny{$\pm$0.005} & 0.824\tiny{$\pm$0.006} & 0.039\tiny{$\pm$0.006} \\
+\midrule
+Replay, equal weights & 0.913\tiny{$\pm$0.005} & 0.050\tiny{$\pm$0.004} & 0.809\tiny{$\pm$0.006} & 0.094\tiny{$\pm$0.005} \\
+\method{} & 0.914\tiny{$\pm$0.013} & 0.042\tiny{$\pm$0.020} & 0.796\tiny{$\pm$0.012} & 0.086\tiny{$\pm$0.017} \\
+\bottomrule
+\end{tabular}
+\end{table}

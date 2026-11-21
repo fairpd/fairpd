@@ -1,0 +1,10 @@
+bio-sel-eo-replay-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --pd-eta 0 --tf32
+bio-sel-eo-eta0.1-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-base mean --pd-eta 0.1
+bio-sel-eo-eta0.3-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-base mean --pd-eta 0.3
+bio-sel-eo-eta1-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-base mean --pd-eta 1
+bio-sel-eo-bal-eta0.1-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-base balanced --pd-eta 0.1
+bio-sel-eo-bal-eta0.3-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-base balanced --pd-eta 0.3
+bio-sel-eo-bal-eta1-s0 --dataset Bios --metric EO --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-base balanced --pd-eta 1
+bio-sel-dp-rate-eta0.01-s0 --dataset Bios --metric DP --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-rate --pd-eta 0.01
+bio-sel-dp-rate-eta0.03-s0 --dataset Bios --metric DP --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-rate --pd-eta 0.03
+bio-sel-dp-rate-eta0.1-s0 --dataset Bios --metric DP --method pd --seed 0 --split val --lr 2e-05 --tau 2 --tf32 --pd-rate --pd-eta 0.1

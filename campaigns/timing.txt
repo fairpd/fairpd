@@ -1,0 +1,6 @@
+tim-mn-replay --dataset MNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-eta 0
+tim-mn-fairpd --dataset MNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 3
+tim-mn-fsw --dataset MNIST --metric EER --method FSW --seed 0 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 1
+tim-bm-replay --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-eta 0
+tim-bm-fairpd --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+tim-bm-fsw --dataset BiasedMNIST --metric EO --method FSW --seed 0 --split test --lr 0.001 --tau 5 --alpha 0.0005 --lambda 0.5

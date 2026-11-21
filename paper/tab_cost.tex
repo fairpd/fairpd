@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\caption{Wall-clock time of one run (seed 0), the runs executed one after another on the same processor with four threads; for \fsw{}, the part spent computing gradients and solving its linear programs}\label{tab:cost}
+\footnotesize
+\begin{tabular}{lrrrr}
+\toprule
+Benchmark & Replay (s) & \method{} (s) & \fsw{} (s) & of which gradients and LP (s) \\
+\midrule
+MNIST & 49 & 45 & 102 & 73 \\
+Biased MNIST & 182 & 190 & 230 & 124 \\
+\bottomrule
+\end{tabular}
+\end{table}

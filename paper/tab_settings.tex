@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Learning rate and replay weight $\tau$ (those \fsw{} selected \cite{park2026fsw}), and the configuration of \method{} selected on the validation split}\label{tab:settings}
+\footnotesize
+\begin{tabular}{llccl}
+\toprule
+Benchmark & Measure & Learning rate & $\tau$ & \method{} \\
+\midrule
+MNIST & EER & $0.001$ & 10 & brake, $\kappa = 1$, probe, $\eta = 3$ \\
+FMNIST & EER & $0.001$ & 10 & brake, $\kappa = 1$, probe, $\eta = 1$ \\
+Biased MNIST & EO & $0.001$ & 5 & balanced base, $\eta = 0.3$ \\
+Biased MNIST & DP & $0.001$ & 10 & rates, $\eta = 0.03$ \\
+DRUG & EO & $0.01$ & 1 & $\eta = 0.1$ \\
+DRUG & DP & $0.001$ & 1 & rates, $\eta = 0.3$ \\
+BiasBios & EO & $2\times 10^{-5}$ & 2 & none ($\eta = 0$) \\
+BiasBios & DP & $2\times 10^{-5}$ & 2 & none ($\eta = 0$) \\
+\bottomrule
+\end{tabular}
+\end{table}

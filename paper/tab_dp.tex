@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Average accuracy and demographic-parity disparity (DP), as in Table~\ref{tab:eo}. Where the selection retained no constraint (BiasBios), the row of \method{} repeats the replay runs}\label{tab:dp}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}
+\toprule
+Method & \multicolumn{2}{c}{Biased MNIST} & \multicolumn{2}{c}{DRUG} & \multicolumn{2}{c}{BiasBios} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & Acc. & DP & Acc. & DP & Acc. & DP \\
+\midrule
+Joint & 0.944\tiny{$\pm$0.002} & 0.006\tiny{$\pm$0.001} & 0.442\tiny{$\pm$0.015} & 0.090\tiny{$\pm$0.020} & 0.823\tiny{$\pm$0.002} & 0.021\tiny{$\pm$0.000} \\
+Fine-tune & 0.449\tiny{$\pm$0.001} & 0.017\tiny{$\pm$0.008} & 0.357\tiny{$\pm$0.009} & 0.102\tiny{$\pm$0.013} & 0.420\tiny{$\pm$0.001} & 0.028\tiny{$\pm$0.002} \\
+\midrule
+iCaRL & 0.802\tiny{$\pm$0.008} & 0.015\tiny{$\pm$0.001} & 0.444\tiny{$\pm$0.025} & 0.093\tiny{$\pm$0.009} & 0.829\tiny{$\pm$0.002} & 0.022\tiny{$\pm$0.000} \\
+WA & 0.916\tiny{$\pm$0.002} & 0.009\tiny{$\pm$0.001} & 0.408\tiny{$\pm$0.022} & 0.067\tiny{$\pm$0.013} & 0.796\tiny{$\pm$0.003} & 0.022\tiny{$\pm$0.000} \\
+CLAD & 0.871\tiny{$\pm$0.012} & 0.013\tiny{$\pm$0.001} & 0.410\tiny{$\pm$0.026} & 0.069\tiny{$\pm$0.019} & 0.799\tiny{$\pm$0.003} & 0.022\tiny{$\pm$0.000} \\
+GSS & 0.809\tiny{$\pm$0.005} & 0.039\tiny{$\pm$0.003} & 0.392\tiny{$\pm$0.022} & 0.065\tiny{$\pm$0.015} & 0.808\tiny{$\pm$0.003} & 0.023\tiny{$\pm$0.000} \\
+OCS & 0.824\tiny{$\pm$0.007} & 0.035\tiny{$\pm$0.003} & 0.393\tiny{$\pm$0.017} & 0.053\tiny{$\pm$0.012} & n/r & n/r \\
+FaIRL & 0.411\tiny{$\pm$0.012} & 0.026\tiny{$\pm$0.008} & 0.354\tiny{$\pm$0.011} & 0.040\tiny{$\pm$0.008} & 0.400\tiny{$\pm$0.060} & 0.015\tiny{$\pm$0.002} \\
+FSW \cite{park2026fsw} & 0.904\tiny{$\pm$0.004} & 0.008\tiny{$\pm$0.001} & 0.405\tiny{$\pm$0.013} & 0.043\tiny{$\pm$0.004} & 0.809\tiny{$\pm$0.003} & 0.022\tiny{$\pm$0.000} \\
+\midrule
+Replay, equal weights & 0.910\tiny{$\pm$0.003} & 0.009\tiny{$\pm$0.001} & 0.403\tiny{$\pm$0.009} & 0.044\tiny{$\pm$0.005} & 0.807\tiny{$\pm$0.002} & 0.022\tiny{$\pm$0.000} \\
+\method{} & 0.906\tiny{$\pm$0.003} & 0.011\tiny{$\pm$0.001} & 0.398\tiny{$\pm$0.009} & 0.039\tiny{$\pm$0.016} & 0.807\tiny{$\pm$0.002} & 0.022\tiny{$\pm$0.000} \\
+\bottomrule
+\end{tabular}
+\end{table}

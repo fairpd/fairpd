@@ -1,0 +1,50 @@
+[project]
+name = "fairpd"
+version = "0.1.0"
+description = "Fairness-constrained replay for class-incremental learning, run in the FSW (KDD 2026) protocol"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"   # torch 2.6.0+cu124 has wheels for 3.9 to 3.13 only
+dependencies = [
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    # Upper bounds: the last releases with glibc-2.17 (manylinux2014) wheels, so
+    # that the same lockfile installs on older systems (glibc 2.17) as everywhere else.
+    "numpy>=1.26,<2.3",
+    "scipy>=1.11,<1.16",
+    "pandas>=2.1,<2.3",
+    "scikit-learn>=1.3,<1.8",
+    "matplotlib>=3.8",
+    "contourpy<1.3.3",
+    "seaborn>=0.12",          # imported at module level by cl_gym's callbacks
+    "pillow>=9.4,<12",
+    "tqdm>=4.65",
+    "docplex>=2.25",          # imported at module level by FSW's LP solvers; the CPLEX runtime is not needed
+    "ucimlrepo>=0.0.7",       # imported at module level by FSW's DRUG loader
+    "transformers>=4.40,<5",  # BERT backbone for BiasBios
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: long-running tests",
+    "gpu: tests that need a CUDA device",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu124", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cu124", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true

@@ -1,0 +1,5 @@
+bio-eo-replay-s0 --dataset Bios --metric EO --method pd --seed 0 --split test --lr 2e-05 --tau 2 --pd-eta 0 --tf32
+bio-eo-replay-s1 --dataset Bios --metric EO --method pd --seed 1 --split test --lr 2e-05 --tau 2 --pd-eta 0 --tf32
+bio-eo-replay-s2 --dataset Bios --metric EO --method pd --seed 2 --split test --lr 2e-05 --tau 2 --pd-eta 0 --tf32
+bio-eo-replay-s3 --dataset Bios --metric EO --method pd --seed 3 --split test --lr 2e-05 --tau 2 --pd-eta 0 --tf32
+bio-eo-replay-s4 --dataset Bios --metric EO --method pd --seed 4 --split test --lr 2e-05 --tau 2 --pd-eta 0 --tf32

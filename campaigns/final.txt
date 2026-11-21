@@ -1,0 +1,131 @@
+fin-mn-eer-replay-s0 --dataset MNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-fm-eer-replay-s0 --dataset FashionMNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-bm-eo-replay-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-eta 0
+fin-bm-dp-replay-s0 --dataset BiasedMNIST --metric DP --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-dr-eo-replay-s0 --dataset Drug --metric EO --method pd --seed 0 --split test --lr 0.01 --tau 1 --pd-eta 0
+fin-dr-dp-replay-s0 --dataset Drug --metric DP --method pd --seed 0 --split test --lr 0.001 --tau 1 --pd-eta 0
+fin-mn-eer-fairpd-s0 --dataset MNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 3
+fin-fm-eer-fairpd-s0 --dataset FashionMNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 1
+fin-bm-eo-fairpd-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-dp-fairpd-s0 --dataset BiasedMNIST --metric DP --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-rate --pd-eta 0.03
+fin-dr-eo-fairpd-s0 --dataset Drug --metric EO --method pd --seed 0 --split test --lr 0.01 --tau 1 --pd-base mean --pd-eta 0.1
+fin-dr-dp-fairpd-s0 --dataset Drug --metric DP --method pd --seed 0 --split test --lr 0.001 --tau 1 --pd-rate --pd-eta 0.3
+fin-bm-eo-balance-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-eta 0 --pd-base balanced
+fin-bm-eo-fairpdmean-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base mean --pd-eta 0.3
+fin-dr-eo-balance-s0 --dataset Drug --metric EO --method pd --seed 0 --split test --lr 0.01 --tau 1 --pd-eta 0 --pd-base balanced
+fin-dr-eo-fairpdbalanced-s0 --dataset Drug --metric EO --method pd --seed 0 --split test --lr 0.01 --tau 1 --pd-base balanced --pd-eta 0.1
+fin-mn-eer-nobrake-s0 --dataset MNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 3
+fin-mn-eer-replay1ep-s0 --dataset MNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-mn-eer-fsw-s0 --dataset MNIST --metric EER --method FSW --seed 0 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 1
+fin-fm-eer-nobrake-s0 --dataset FashionMNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 1
+fin-fm-eer-replay1ep-s0 --dataset FashionMNIST --metric EER --method pd --seed 0 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-fm-eer-fsw-s0 --dataset FashionMNIST --metric EER --method FSW --seed 0 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 0.1
+fin-bm-eo-fsw-s0 --dataset BiasedMNIST --metric EO --method FSW --seed 0 --split test --lr 0.001 --tau 5 --alpha 0.0005 --lambda 0.5
+fin-bm-eo-eta0.03-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.03
+fin-bm-eo-eta0.1-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.1
+fin-bm-eo-eta0.3-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-eo-eta1-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 1
+fin-bm-eo-eta3-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 3
+fin-bm-eo-eta10-s0 --dataset BiasedMNIST --metric EO --method pd --seed 0 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 10
+fin-mn-eer-replay-s1 --dataset MNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-fm-eer-replay-s1 --dataset FashionMNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-bm-eo-replay-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-eta 0
+fin-bm-dp-replay-s1 --dataset BiasedMNIST --metric DP --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-dr-eo-replay-s1 --dataset Drug --metric EO --method pd --seed 1 --split test --lr 0.01 --tau 1 --pd-eta 0
+fin-dr-dp-replay-s1 --dataset Drug --metric DP --method pd --seed 1 --split test --lr 0.001 --tau 1 --pd-eta 0
+fin-mn-eer-fairpd-s1 --dataset MNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 3
+fin-fm-eer-fairpd-s1 --dataset FashionMNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 1
+fin-bm-eo-fairpd-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-dp-fairpd-s1 --dataset BiasedMNIST --metric DP --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-rate --pd-eta 0.03
+fin-dr-eo-fairpd-s1 --dataset Drug --metric EO --method pd --seed 1 --split test --lr 0.01 --tau 1 --pd-base mean --pd-eta 0.1
+fin-dr-dp-fairpd-s1 --dataset Drug --metric DP --method pd --seed 1 --split test --lr 0.001 --tau 1 --pd-rate --pd-eta 0.3
+fin-bm-eo-balance-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-eta 0 --pd-base balanced
+fin-bm-eo-fairpdmean-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base mean --pd-eta 0.3
+fin-dr-eo-balance-s1 --dataset Drug --metric EO --method pd --seed 1 --split test --lr 0.01 --tau 1 --pd-eta 0 --pd-base balanced
+fin-dr-eo-fairpdbalanced-s1 --dataset Drug --metric EO --method pd --seed 1 --split test --lr 0.01 --tau 1 --pd-base balanced --pd-eta 0.1
+fin-mn-eer-nobrake-s1 --dataset MNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 3
+fin-mn-eer-replay1ep-s1 --dataset MNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-mn-eer-fsw-s1 --dataset MNIST --metric EER --method FSW --seed 1 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 1
+fin-fm-eer-nobrake-s1 --dataset FashionMNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 1
+fin-fm-eer-replay1ep-s1 --dataset FashionMNIST --metric EER --method pd --seed 1 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-fm-eer-fsw-s1 --dataset FashionMNIST --metric EER --method FSW --seed 1 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 0.1
+fin-bm-eo-fsw-s1 --dataset BiasedMNIST --metric EO --method FSW --seed 1 --split test --lr 0.001 --tau 5 --alpha 0.0005 --lambda 0.5
+fin-bm-eo-eta0.03-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.03
+fin-bm-eo-eta0.1-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.1
+fin-bm-eo-eta0.3-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-eo-eta1-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 1
+fin-bm-eo-eta3-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 3
+fin-bm-eo-eta10-s1 --dataset BiasedMNIST --metric EO --method pd --seed 1 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 10
+fin-mn-eer-replay-s2 --dataset MNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-fm-eer-replay-s2 --dataset FashionMNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-bm-eo-replay-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-eta 0
+fin-bm-dp-replay-s2 --dataset BiasedMNIST --metric DP --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-dr-eo-replay-s2 --dataset Drug --metric EO --method pd --seed 2 --split test --lr 0.01 --tau 1 --pd-eta 0
+fin-dr-dp-replay-s2 --dataset Drug --metric DP --method pd --seed 2 --split test --lr 0.001 --tau 1 --pd-eta 0
+fin-mn-eer-fairpd-s2 --dataset MNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 3
+fin-fm-eer-fairpd-s2 --dataset FashionMNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 1
+fin-bm-eo-fairpd-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-dp-fairpd-s2 --dataset BiasedMNIST --metric DP --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-rate --pd-eta 0.03
+fin-dr-eo-fairpd-s2 --dataset Drug --metric EO --method pd --seed 2 --split test --lr 0.01 --tau 1 --pd-base mean --pd-eta 0.1
+fin-dr-dp-fairpd-s2 --dataset Drug --metric DP --method pd --seed 2 --split test --lr 0.001 --tau 1 --pd-rate --pd-eta 0.3
+fin-bm-eo-balance-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-eta 0 --pd-base balanced
+fin-bm-eo-fairpdmean-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base mean --pd-eta 0.3
+fin-dr-eo-balance-s2 --dataset Drug --metric EO --method pd --seed 2 --split test --lr 0.01 --tau 1 --pd-eta 0 --pd-base balanced
+fin-dr-eo-fairpdbalanced-s2 --dataset Drug --metric EO --method pd --seed 2 --split test --lr 0.01 --tau 1 --pd-base balanced --pd-eta 0.1
+fin-mn-eer-nobrake-s2 --dataset MNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 3
+fin-mn-eer-replay1ep-s2 --dataset MNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-mn-eer-fsw-s2 --dataset MNIST --metric EER --method FSW --seed 2 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 1
+fin-fm-eer-nobrake-s2 --dataset FashionMNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 1
+fin-fm-eer-replay1ep-s2 --dataset FashionMNIST --metric EER --method pd --seed 2 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-fm-eer-fsw-s2 --dataset FashionMNIST --metric EER --method FSW --seed 2 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 0.1
+fin-bm-eo-fsw-s2 --dataset BiasedMNIST --metric EO --method FSW --seed 2 --split test --lr 0.001 --tau 5 --alpha 0.0005 --lambda 0.5
+fin-bm-eo-eta0.03-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.03
+fin-bm-eo-eta0.1-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.1
+fin-bm-eo-eta0.3-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-eo-eta1-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 1
+fin-bm-eo-eta3-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 3
+fin-bm-eo-eta10-s2 --dataset BiasedMNIST --metric EO --method pd --seed 2 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 10
+fin-mn-eer-replay-s3 --dataset MNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-fm-eer-replay-s3 --dataset FashionMNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-bm-eo-replay-s3 --dataset BiasedMNIST --metric EO --method pd --seed 3 --split test --lr 0.001 --tau 5 --pd-eta 0
+fin-bm-dp-replay-s3 --dataset BiasedMNIST --metric DP --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-dr-eo-replay-s3 --dataset Drug --metric EO --method pd --seed 3 --split test --lr 0.01 --tau 1 --pd-eta 0
+fin-dr-dp-replay-s3 --dataset Drug --metric DP --method pd --seed 3 --split test --lr 0.001 --tau 1 --pd-eta 0
+fin-mn-eer-fairpd-s3 --dataset MNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 3
+fin-fm-eer-fairpd-s3 --dataset FashionMNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 1
+fin-bm-eo-fairpd-s3 --dataset BiasedMNIST --metric EO --method pd --seed 3 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-dp-fairpd-s3 --dataset BiasedMNIST --metric DP --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-rate --pd-eta 0.03
+fin-dr-eo-fairpd-s3 --dataset Drug --metric EO --method pd --seed 3 --split test --lr 0.01 --tau 1 --pd-base mean --pd-eta 0.1
+fin-dr-dp-fairpd-s3 --dataset Drug --metric DP --method pd --seed 3 --split test --lr 0.001 --tau 1 --pd-rate --pd-eta 0.3
+fin-bm-eo-balance-s3 --dataset BiasedMNIST --metric EO --method pd --seed 3 --split test --lr 0.001 --tau 5 --pd-eta 0 --pd-base balanced
+fin-bm-eo-fairpdmean-s3 --dataset BiasedMNIST --metric EO --method pd --seed 3 --split test --lr 0.001 --tau 5 --pd-base mean --pd-eta 0.3
+fin-dr-eo-balance-s3 --dataset Drug --metric EO --method pd --seed 3 --split test --lr 0.01 --tau 1 --pd-eta 0 --pd-base balanced
+fin-dr-eo-fairpdbalanced-s3 --dataset Drug --metric EO --method pd --seed 3 --split test --lr 0.01 --tau 1 --pd-base balanced --pd-eta 0.1
+fin-mn-eer-nobrake-s3 --dataset MNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 3
+fin-mn-eer-replay1ep-s3 --dataset MNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-mn-eer-fsw-s3 --dataset MNIST --metric EER --method FSW --seed 3 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 1
+fin-fm-eer-nobrake-s3 --dataset FashionMNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 1
+fin-fm-eer-replay1ep-s3 --dataset FashionMNIST --metric EER --method pd --seed 3 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-fm-eer-fsw-s3 --dataset FashionMNIST --metric EER --method FSW --seed 3 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 0.1
+fin-mn-eer-replay-s4 --dataset MNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-fm-eer-replay-s4 --dataset FashionMNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-bm-eo-replay-s4 --dataset BiasedMNIST --metric EO --method pd --seed 4 --split test --lr 0.001 --tau 5 --pd-eta 0
+fin-bm-dp-replay-s4 --dataset BiasedMNIST --metric DP --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-eta 0
+fin-dr-eo-replay-s4 --dataset Drug --metric EO --method pd --seed 4 --split test --lr 0.01 --tau 1 --pd-eta 0
+fin-dr-dp-replay-s4 --dataset Drug --metric DP --method pd --seed 4 --split test --lr 0.001 --tau 1 --pd-eta 0
+fin-mn-eer-fairpd-s4 --dataset MNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 3
+fin-fm-eer-fairpd-s4 --dataset FashionMNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-brake 1 --pd-eta 1
+fin-bm-eo-fairpd-s4 --dataset BiasedMNIST --metric EO --method pd --seed 4 --split test --lr 0.001 --tau 5 --pd-base balanced --pd-eta 0.3
+fin-bm-dp-fairpd-s4 --dataset BiasedMNIST --metric DP --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-rate --pd-eta 0.03
+fin-dr-eo-fairpd-s4 --dataset Drug --metric EO --method pd --seed 4 --split test --lr 0.01 --tau 1 --pd-base mean --pd-eta 0.1
+fin-dr-dp-fairpd-s4 --dataset Drug --metric DP --method pd --seed 4 --split test --lr 0.001 --tau 1 --pd-rate --pd-eta 0.3
+fin-bm-eo-balance-s4 --dataset BiasedMNIST --metric EO --method pd --seed 4 --split test --lr 0.001 --tau 5 --pd-eta 0 --pd-base balanced
+fin-bm-eo-fairpdmean-s4 --dataset BiasedMNIST --metric EO --method pd --seed 4 --split test --lr 0.001 --tau 5 --pd-base mean --pd-eta 0.3
+fin-dr-eo-balance-s4 --dataset Drug --metric EO --method pd --seed 4 --split test --lr 0.01 --tau 1 --pd-eta 0 --pd-base balanced
+fin-dr-eo-fairpdbalanced-s4 --dataset Drug --metric EO --method pd --seed 4 --split test --lr 0.01 --tau 1 --pd-base balanced --pd-eta 0.1
+fin-mn-eer-nobrake-s4 --dataset MNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 3
+fin-mn-eer-replay1ep-s4 --dataset MNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-mn-eer-fsw-s4 --dataset MNIST --metric EER --method FSW --seed 4 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 1
+fin-fm-eer-nobrake-s4 --dataset FashionMNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-estimator probe --pd-eta 1
+fin-fm-eer-replay1ep-s4 --dataset FashionMNIST --metric EER --method pd --seed 4 --split test --lr 0.001 --tau 10 --pd-eta 0 --epochs 1
+fin-fm-eer-fsw-s4 --dataset FashionMNIST --metric EER --method FSW --seed 4 --split test --lr 0.001 --tau 10 --alpha 0.001 --lambda 0.1

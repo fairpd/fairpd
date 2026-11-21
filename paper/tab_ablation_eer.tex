@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{The class-level benchmarks (test split, five seeds): replay trained for five or for one epoch per task, our runs of \fsw{}, and \method{} with its multipliers acting on the replayed classes' weights or as a brake on the current task}\label{tab:ablation-eer}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+Configuration & \multicolumn{2}{c}{MNIST} & \multicolumn{2}{c}{FMNIST} \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5} & Acc. & EER & Acc. & EER \\
+\midrule
+Replay, equal weights, 5 epochs per task & 0.913\tiny{$\pm$0.005} & 0.050\tiny{$\pm$0.004} & 0.809\tiny{$\pm$0.006} & 0.094\tiny{$\pm$0.005} \\
+Replay, equal weights, 1 epoch per task & 0.922\tiny{$\pm$0.004} & 0.039\tiny{$\pm$0.005} & 0.836\tiny{$\pm$0.007} & 0.040\tiny{$\pm$0.006} \\
+\fsw{}, our runs (HiGHS) & 0.924\tiny{$\pm$0.005} & 0.032\tiny{$\pm$0.006} & 0.823\tiny{$\pm$0.008} & 0.039\tiny{$\pm$0.008} \\
+\method{}, multipliers on replay weights & 0.906\tiny{$\pm$0.010} & 0.051\tiny{$\pm$0.008} & 0.806\tiny{$\pm$0.010} & 0.070\tiny{$\pm$0.015} \\
+\method{}, multipliers as a brake & 0.914\tiny{$\pm$0.013} & 0.042\tiny{$\pm$0.020} & 0.796\tiny{$\pm$0.012} & 0.086\tiny{$\pm$0.017} \\
+\bottomrule
+\end{tabular}
+\end{table}

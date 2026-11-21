@@ -1,0 +1,42 @@
+--- a/algorithms/sensitive.py
++++ b/algorithms/sensitive.py
+@@ -919,25 +919,25 @@
+         if solver is None:
+             if metric == "EO" or metric is None:
+                 if fairloss_type == "CE":
+-                if agg == "mean" or agg is None:
+-                    solver = absolute_and_nonabsolute_minsum_LP_solver
+-                    self.converter = self.converter_LP_absolute_additional_EO
+-                elif agg == "max":
+-                    raise NotImplementedError
+-                    solver = absolute_minimax_LP_solver
+-                    self.converter = self.converter_LP_absolute_only_EO
+-                else:
+-                    raise NotImplementedError
++                    if agg == "mean" or agg is None:
++                        solver = absolute_and_nonabsolute_minsum_LP_solver
++                        self.converter = self.converter_LP_absolute_additional_EO
++                    elif agg == "max":
++                        raise NotImplementedError
++                        solver = absolute_minimax_LP_solver
++                        self.converter = self.converter_LP_absolute_only_EO
++                    else:
++                        raise NotImplementedError
+                 else:
+                     solver = absolute_and_nonabsolute_minsum_LP_solver
+                     self.converter = self.converter_LP_absolute_additional_EO_diffloss
+             elif metric == "DP":
+                 if fairloss_type == "CE":
+-                if agg == "mean" or agg is None:
+-                    solver = absolute_and_nonabsolute_minsum_LP_solver
+-                    self.converter = self.converter_LP_absolute_additional_DP
+-                else:
+-                    raise NotImplementedError
++                    if agg == "mean" or agg is None:
++                        solver = absolute_and_nonabsolute_minsum_LP_solver
++                        self.converter = self.converter_LP_absolute_additional_DP
++                    else:
++                        raise NotImplementedError
+                 else:
+                     solver = absolute_and_nonabsolute_minsum_LP_solver
+                     self.converter = self.converter_LP_absolute_additional_DP_diffloss

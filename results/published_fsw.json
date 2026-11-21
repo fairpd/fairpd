@@ -1,0 +1,1097 @@
+{
+ "source": "Park, Kim and Whang, Fair Class-Incremental Learning using Sample Weighting, KDD 2026, doi:10.1145/3770854.3780167; arXiv:2410.01324v3, appendix tables (mean, standard deviation over five seeds)",
+ "results": [
+  {
+   "method": "CLAD",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.871,
+    0.012
+   ],
+   "disp": [
+    0.013,
+    0.001
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.871,
+    0.012
+   ],
+   "disp": [
+    0.198,
+    0.022
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.799,
+    0.003
+   ],
+   "disp": [
+    0.022,
+    0.0
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.799,
+    0.003
+   ],
+   "disp": [
+    0.074,
+    0.002
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.41,
+    0.026
+   ],
+   "disp": [
+    0.069,
+    0.019
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.41,
+    0.026
+   ],
+   "disp": [
+    0.114,
+    0.043
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.782,
+    0.018
+   ],
+   "disp": [
+    0.118,
+    0.022
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "CLAD",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.835,
+    0.016
+   ],
+   "disp": [
+    0.099,
+    0.016
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.904,
+    0.004
+   ],
+   "disp": [
+    0.008,
+    0.001
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.909,
+    0.004
+   ],
+   "disp": [
+    0.119,
+    0.007
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.809,
+    0.003
+   ],
+   "disp": [
+    0.022,
+    0.0
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.808,
+    0.002
+   ],
+   "disp": [
+    0.072,
+    0.001
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.405,
+    0.013
+   ],
+   "disp": [
+    0.043,
+    0.004
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.406,
+    0.014
+   ],
+   "disp": [
+    0.077,
+    0.01
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.824,
+    0.006
+   ],
+   "disp": [
+    0.039,
+    0.006
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "FSW",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.925,
+    0.004
+   ],
+   "disp": [
+    0.032,
+    0.005
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.411,
+    0.012
+   ],
+   "disp": [
+    0.026,
+    0.008
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.411,
+    0.012
+   ],
+   "disp": [
+    0.118,
+    0.011
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.4,
+    0.06
+   ],
+   "disp": [
+    0.015,
+    0.002
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.4,
+    0.06
+   ],
+   "disp": [
+    0.055,
+    0.02
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.354,
+    0.011
+   ],
+   "disp": [
+    0.04,
+    0.008
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.354,
+    0.011
+   ],
+   "disp": [
+    0.06,
+    0.021
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.531,
+    0.032
+   ],
+   "disp": [
+    0.289,
+    0.019
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "FaIRL",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.558,
+    0.06
+   ],
+   "disp": [
+    0.273,
+    0.018
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.449,
+    0.001
+   ],
+   "disp": [
+    0.017,
+    0.008
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.449,
+    0.001
+   ],
+   "disp": [
+    0.016,
+    0.002
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.42,
+    0.001
+   ],
+   "disp": [
+    0.028,
+    0.002
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.42,
+    0.001
+   ],
+   "disp": [
+    0.028,
+    0.002
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.357,
+    0.009
+   ],
+   "disp": [
+    0.102,
+    0.013
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.357,
+    0.009
+   ],
+   "disp": [
+    0.125,
+    0.034
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.451,
+    0.0
+   ],
+   "disp": [
+    0.325,
+    0.0
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "Fine-tune",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.455,
+    0.0
+   ],
+   "disp": [
+    0.326,
+    0.0
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.809,
+    0.005
+   ],
+   "disp": [
+    0.039,
+    0.003
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.809,
+    0.005
+   ],
+   "disp": [
+    0.325,
+    0.017
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.808,
+    0.003
+   ],
+   "disp": [
+    0.023,
+    0.0
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.808,
+    0.003
+   ],
+   "disp": [
+    0.081,
+    0.002
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.392,
+    0.022
+   ],
+   "disp": [
+    0.065,
+    0.015
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.426,
+    0.01
+   ],
+   "disp": [
+    0.167,
+    0.038
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.732,
+    0.021
+   ],
+   "disp": [
+    0.149,
+    0.019
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "GSS",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.889,
+    0.01
+   ],
+   "disp": [
+    0.08,
+    0.009
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.944,
+    0.002
+   ],
+   "disp": [
+    0.006,
+    0.001
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.944,
+    0.002
+   ],
+   "disp": [
+    0.108,
+    0.003
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.823,
+    0.002
+   ],
+   "disp": [
+    0.021,
+    0.0
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.823,
+    0.002
+   ],
+   "disp": [
+    0.076,
+    0.001
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.442,
+    0.015
+   ],
+   "disp": [
+    0.09,
+    0.02
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.442,
+    0.015
+   ],
+   "disp": [
+    0.179,
+    0.052
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.921,
+    0.002
+   ],
+   "disp": [
+    0.024,
+    0.002
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "Joint",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.989,
+    0.0
+   ],
+   "disp": [
+    0.003,
+    0.0
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "OCS",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.824,
+    0.007
+   ],
+   "disp": [
+    0.035,
+    0.003
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "OCS",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.824,
+    0.007
+   ],
+   "disp": [
+    0.331,
+    0.013
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "OCS",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.393,
+    0.017
+   ],
+   "disp": [
+    0.053,
+    0.012
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "OCS",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.406,
+    0.024
+   ],
+   "disp": [
+    0.142,
+    0.03
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "OCS",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.799,
+    0.008
+   ],
+   "disp": [
+    0.109,
+    0.007
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "OCS",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.929,
+    0.002
+   ],
+   "disp": [
+    0.04,
+    0.003
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.91,
+    0.003
+   ],
+   "disp": [
+    0.009,
+    0.001
+   ],
+   "table": "tbl:performance_ablation_dp"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.91,
+    0.003
+   ],
+   "disp": [
+    0.126,
+    0.005
+   ],
+   "table": "tbl:performance_ablation_eo"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.806,
+    0.003
+   ],
+   "disp": [
+    0.022,
+    0.0
+   ],
+   "table": "tbl:performance_ablation_dp"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.806,
+    0.003
+   ],
+   "disp": [
+    0.073,
+    0.002
+   ],
+   "table": "tbl:performance_ablation_eo"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.402,
+    0.01
+   ],
+   "disp": [
+    0.044,
+    0.004
+   ],
+   "table": "tbl:performance_ablation_dp"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.402,
+    0.01
+   ],
+   "disp": [
+    0.08,
+    0.005
+   ],
+   "table": "tbl:performance_ablation_eo"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.81,
+    0.004
+   ],
+   "disp": [
+    0.092,
+    0.003
+   ],
+   "table": "tbl:performance_ablation_eer"
+  },
+  {
+   "method": "Replay (W/o FSW)",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.912,
+    0.004
+   ],
+   "disp": [
+    0.051,
+    0.005
+   ],
+   "table": "tbl:performance_ablation_eer"
+  },
+  {
+   "method": "WA",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.916,
+    0.002
+   ],
+   "disp": [
+    0.009,
+    0.001
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.916,
+    0.002
+   ],
+   "disp": [
+    0.14,
+    0.004
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.796,
+    0.003
+   ],
+   "disp": [
+    0.022,
+    0.0
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.796,
+    0.003
+   ],
+   "disp": [
+    0.076,
+    0.001
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.408,
+    0.022
+   ],
+   "disp": [
+    0.067,
+    0.013
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.408,
+    0.022
+   ],
+   "disp": [
+    0.134,
+    0.029
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.809,
+    0.005
+   ],
+   "disp": [
+    0.088,
+    0.003
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "WA",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.911,
+    0.007
+   ],
+   "disp": [
+    0.052,
+    0.006
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "BiasedMNIST",
+   "measure": "DP",
+   "acc": [
+    0.802,
+    0.008
+   ],
+   "disp": [
+    0.015,
+    0.001
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "BiasedMNIST",
+   "measure": "EO",
+   "acc": [
+    0.802,
+    0.008
+   ],
+   "disp": [
+    0.365,
+    0.021
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "Bios",
+   "measure": "DP",
+   "acc": [
+    0.829,
+    0.002
+   ],
+   "disp": [
+    0.022,
+    0.0
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "Bios",
+   "measure": "EO",
+   "acc": [
+    0.829,
+    0.002
+   ],
+   "disp": [
+    0.084,
+    0.003
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "Drug",
+   "measure": "DP",
+   "acc": [
+    0.444,
+    0.025
+   ],
+   "disp": [
+    0.093,
+    0.009
+   ],
+   "table": "tbl:performance_dp_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "Drug",
+   "measure": "EO",
+   "acc": [
+    0.444,
+    0.025
+   ],
+   "disp": [
+    0.19,
+    0.017
+   ],
+   "table": "tbl:performance_eo_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "FashionMNIST",
+   "measure": "EER",
+   "acc": [
+    0.852,
+    0.002
+   ],
+   "disp": [
+    0.047,
+    0.001
+   ],
+   "table": "tbl:performance_eer_disp"
+  },
+  {
+   "method": "iCaRL",
+   "dataset": "MNIST",
+   "measure": "EER",
+   "acc": [
+    0.918,
+    0.005
+   ],
+   "disp": [
+    0.048,
+    0.003
+   ],
+   "table": "tbl:performance_eer_disp"
+  }
+ ]
+}
